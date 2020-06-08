@@ -1,0 +1,126 @@
+﻿{
+	"AnonFile": {
+		"regex": "(http[s]?:\/\/)?anonfile.com\/.*",
+		"actions": []
+	},
+	"DanBooru": {
+		"regex": "(http[s]?:\/\/)?danbooru\\.donmai\\.us/posts/[0-9]{1,}",
+		"actions": []
+	},
+	"Discord Gift": {
+		"regex": "(http[s]?:\/\/)?discord\\.gift\/[a-zA-Z0-9]{10,24}",
+		"actions": ["mention:@everyone", "send_raw"]
+	},
+	"Discord Invite": {
+		"regex": "(http[s]?:\/\/)?(discord\\.gg\/|discordapp\\.com/invite\/)[a-zA-Z0-9]{1,}",
+		"actions": ["send_raw"]
+	},
+	"Discord Token": {
+		"regex": "([a-zA-Z0-9_-]{24}\\.[a-zA-Z0-9_-]{6}\\.[a-zA-Z0-9_-]{27}|mfa\\.[a-zA-Z0-9_-]{84})",
+		"actions": []
+	},
+	"Dropbox": {
+		"regex":"(http[s]?:\/\/)?www\\.dropbox\\.com\/..\/[a-zA-Z0-9_-]{1,}\/[a-zA-Z0-9_-]{1,}(\/)?(\\?dl=0)?",
+		"actions": []
+	},
+	"e-Hentai Gallery": {
+		"regex": "(http[s]?:\/\/)?e-hentai\\.org\/g\/[\\d]{1,}\/[\\d\\w]{1,}",
+		"actions": []
+	},
+	"e-Mail address": {
+		"regex": "[a-zA-Z0-9!#$%&'*+=?^_`~-]+(?:\\.[a-zA-Z0-9!#$%&'*+=?^_`~-]+)*@(?:[a-zA-Z](?:[a-zA-Z-]*[a-zA-Z])?\\.)+[a-zA-Z](?:[a-zA-Z-]*[a-zA-Z])?",
+		"actions": []
+	},
+	"e-Mail and Password": {
+		"regex": "[a-zA-Z0-9!#$%&'*+=?^_`~-]+(?:\\.[a-zA-Z0-9!#$%&'*+=?^_`~-]+)*@(?:[a-zA-Z](?:[a-zA-Z-]*[a-zA-Z])?\\.)+[a-zA-Z](?:[a-zA-Z-]*[a-zA-Z])?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+",
+		"actions": []
+	},
+	"Google Drive": {
+		"regex": "(http[s]?:\/\/)?drive.google.com\/file\/d\/.*",
+		"actions": []
+	},
+	"imgbb": {
+		"regex": "(http[s]?:\/\/)?(i\\.|image\\.)?ibb.co\/[a-zA-Z0-9]{1,}(\/[a-zA-Z0-9_-]{1,}\\.[a-zA-Z]{3,4})?",
+		"actions": []
+	},
+	"imgur": {
+		"regex":"(http[s]?:\/\/)?(i\\.)?imgur\\.com\/[a-zA-Z0-9]{7}(\\.[a-zA-Z]{3,4})?",
+		"actions": []
+	},
+	"LightShot": {
+		"regex": "(http[s]?:\/\/)?prnt.sc\/[a-zA-Z0-9]{1,}",
+		"actions": []
+	},
+	"Mega Link": {
+		"regex": "(http[s]?:\/\/)?mega.nz\/#F![a-zA-Z0-9_-]{1,}![a-zA-Z0-9_-]{1,}",
+		"actions": []
+	},
+	"nHentai": {
+		"regex": "(http[s]?:\/\/)?nhentai\\.net\/g\/[0-9]{1,}",
+		"actions": []
+	},
+	"OneDrive": {
+		"regex": "(http[s]?:\/\/)?1drv.ms\/u\/s!.*",
+		"actions": []
+	},
+	"Pixiv": {
+		"regex": "(http[s]?:\/\/)?www.pixiv.net\/..\/artworks\/[0-9]{1,}",
+		"actions": []
+	},
+	"PornHub Photo": {
+		"regex": "(http[s]?:\/\/)?www\\.pornhub\\.com\/photo\/[0-9]{1,}",
+		"actions": []
+	},
+	"PornHub Photo Album": {
+		"regex": "(http[s]?:\/\/)?www.pornhub.com\/album\/[0-9]{1,}",
+		"actions": []
+	},
+	"PornHub Video": {
+		"regex": "(http[s]?:\/\/)?www\\.pornhub\\.com\/view_video\\.php\\?viewkey=.*",
+		"actions": []
+	},
+	"Proxy": {
+		"regex":"[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\:[0-9]{1,4}",
+		"actions": []
+	},
+	"ShadowSocks": {
+		"regex": "ss:\/\/[\\d\\w#]{15,}",
+		"actions": ["mention:<@272336266513612800>"]
+	},
+	"Steam Key": {
+		"regex": "[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}",
+		"actions": []
+	},
+	"Switch Friend Code": {
+		"regex": "SW-[0-9]{4,4}-[0-9]{4,4}-[0-9]{4,4}",
+		"actions": []
+	},
+	"TMPNINJA": {
+		"regex": "(http[s]?:\/\/)?a.tmp.ninja\/.*",
+		"actions": []
+	},
+	"Tor": {
+		"regex": "(http[s]?:\/\/)?[a-zA-Z0-9]{16}\\.onion",
+		"actions": []
+	},
+	"WhatsApp Group": {
+		"regex": "(http[s]?:\/\/)?chat\\.whatsapp.com\/.*",
+		"actions": []
+	},
+	"Yandex Disk": {
+		"regex": "(http[s]?:\/\/)?yadi.sk\/d\/.*",
+		"actions": []
+	},
+	"YouTube Video": {
+		"regex": "(http[s]?:\/\/)?(www\\.youtube\\.com\/watch\\?v=|youtu\\.be\/)[A-Za-z0-9_-]{11}",
+		"actions": []
+	},
+	"Humble Bundle Game": {
+		"regex": "(http[s]?:\/\/)?(www\\.)?humblebundle\\.com\/gift\\?key=[\\w\\d]{1,}",
+		"actions": ["mention:@everyone"]
+	},
+	"Discord Template": {
+		"regex": "(http[s]?:\/\/)?discord\\.new\/[a-zA-Z0-9]{1,}",
+		"actions": ["send_raw"]
+	}
+}
